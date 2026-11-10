@@ -1,0 +1,62 @@
+/*******************************************************************************
+ * Variables — earthtosean.com custom palette
+ * Science palette: earth brown, arctic blue-grey, deep space
+ * Personal palette: dusty magenta, golden amber, forest teal
+ ******************************************************************************/
+
+@use "sass:color";
+
+// Science palette
+$earth-brown: #5D4E37;
+$arctic-blue: #7BA3B5;
+$deep-space: #1B2838;
+
+// Personal palette
+$dusty-magenta: #8B4A6B;
+$golden-amber: #E8A849;
+$forest-teal: #3D6B5C;
+
+// Base al-folio colors (mapped to our palettes)
+$red-color: #ff3636 !default;
+$red-color-dark: #b71c1c !default;
+$orange-color: $golden-amber !default;
+$blue-color: $arctic-blue !default;
+$blue-color-dark: $deep-space !default;
+$cyan-color: $arctic-blue !default;
+$light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
+$green-color: $forest-teal !default;
+$green-color-lime: #b7d12a !default;
+$green-color-dark: #009f06 !default;
+$green-color-light: #ddffdd !default;
+$green-color-bright: #11d68b !default;
+$purple-color: $dusty-magenta !default;
+$light-purple-color: color.adjust($purple-color, $lightness: 25%);
+$pink-color: $dusty-magenta !default;
+$pink-color-light: #ffdddd !default;
+$yellow-color: $golden-amber !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark: #1c1c1d;
+$grey-900: #212529;
+
+$white-color: #ffffff !default;
+$black-color: #000000 !default;
+
+// Theme colors
+$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-dark: #2c3237 !default;
+
+// Font awesome location
+$fa-font-path: "../webfonts";
+
+// Tabler icons location
+$ti-font-path: "../fonts";
+
+// Back To Top button config
+$back-to-top-z-index: 10;
+$back-to-top-bottom: 30px;
+$back-to-top-right: 30px;
+$back-to-top-diameter: 40px;
+$back-to-top-height: $back-to-top-diameter;
+$back-to-top-width: $back-to-top-diameter;
